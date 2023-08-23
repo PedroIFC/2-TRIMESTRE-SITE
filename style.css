@@ -15,6 +15,8 @@ body{
 }
 
 header{
+    z-index: 999999;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     height: 10vh;
@@ -25,13 +27,15 @@ header{
     align-content: center;
     background-color: var(--var-cor1)
 }
-
+header img{
+    width: 60px;
+}
 .bx-menu{
     font-size: 40px;
 }
 
 #conteudo{
-    z-index: -1;
+    padding-top: 100px;
     height: 100vh;
     display: flex;
     justify-content: space-around;
@@ -41,6 +45,12 @@ header{
 
 .anuncio{
     width: 200px;
+}
+
+
+#all {
+    display: flex;
+    justify-content: center;
 }
 
 #meio{
@@ -56,10 +66,10 @@ header{
 }
 
 #noticiaPrincipal{
+    border-radius: 15px;
     overflow: hidden;
-    width: 400px;
-    height: 585px;
-    border: 2px solid red;
+    width: 606px;
+    height: 661px;
     margin-right: 50px;
     transform: scale(1);
     cursor: pointer;
@@ -68,54 +78,69 @@ header{
 }
 
 #noticiaPrincipal img{
-    height: 585px;
+    width: 100%;
     transition: all .5s ease;
 }
 
 #noticiaPrincipal:hover img{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 #noticiaDupla img{
     height: 585px;
     transition: all .5s ease;
 }
 
-#noticiaDupla:hover img{
-    transform: scale(1.3);
-}
+
 
 
 #noticiaDupla{
     transform: scale(1);
     cursor: pointer;
     overflow: hidden;
-    height: 585px;
-    width: 400px;
-    border: 2px solid blue;
+    height: 661px;
+    width: 606px;
 }
 .miniNotice img{
     height: 274.39px;
 }
 
 .miniNotice{
-    height: 28vh;
-    border: 2px solid green;
+    border-radius: 15px;
+    height: 305.5px;
+    overflow: hidden;
+}
+.miniNotice:hover img{
+    transform: scale(1.2);
+}
+#paqueta{
+    margin-bottom: 45px;
+}
+#paqueta img{
+    height: auto;
+    position: relative;
+    width: 600px;
+    top: -20px;
 }
 
-.espaco4vh{
-    margin-top: 4vh;
-}
-.noticiasbaixas{
-    height: 40vh;
+.notice{
+    width: 1250px;
     display: flex;
-    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+
+}
+#abrangedora{
+    display: flex;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
-}
-.noticiamini{
-    display: inline;
-}
 
+}
+.imagemnotice{
+    width: 20%;
+}
+.postnotice{
+    width: 80%;
+}
 
 
 @media (max-width: 1440px){
