@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritmo</title>
+    <link rel="stylesheet" href="estilos/basquete.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div><img src="imagens/logo.png" alt=""></div>
+        <div id="titulosite">RITMO</div>
+        <nav>
+            <i class='bx bx-menu'>
+
+            </i>
+
+            <div class="overlay" id="overlay">
+                <div class="menu">
+                    <a href="index.html" onclick="toggleMenu()">HOME</a>
+                    <a href="basquete.html" onclick="toggleMenu()">Basquete</a>
+                    <a href="futebol.html" onclick="toggleMenu()">Futebol</a>
+                    <a href="surfe.html" onclick="toggleMenu()">Surfe</a>
+                    <button id="Fechar">Close Menu</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="noticiastop">
+            <div id="all">
+                <div class="anuncio" id="anuncioE">anuncio</div>
+                <div id="conteudo">
+
+                    <div id="meio">
+                        <div id="CUBAO">
+                            <div id="noticiaPrincipal">
+
+                                </style>
+                                <img src="imagens/jamorant.jpg" alt="">
+                                <p class="tittle">Ele está de volta! Ja Morant volta as quadras</p>
+                            </div>
+                            <div id="noticiaDupla">
+                                <div class="miniNotice" id="paqueta">
+                                    <img src="imagens/jamesharden.webp" alt="">
+                                </div>
+                                <div class="miniNotice espaco4vh">
+                                    <img src="imagens/giannis.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="anuncio" id="auncioD">anuncio</div>
+            </div>
+        </section>
+        <section>
+            <div id="abrangedora">
+                <div class="notice">
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/sheillavolei.webp"
+                                alt=""></a></div>
+                    <a id="linkado" href="">
+                        <div class="postnotice">
+                            <div class="titulomini">Bicampeã olímpica Sheilla será assistente da seleção feminina de
+                                vôlei</div>
+                            <div class="assunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur
+                                non laboriosam autem nulla dolor nesciunt dolorum natus vel, facilis cupiditate porro
+                                sit at nisi blanditiis facere? Iure, corrupti voluptatum?</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="notice">
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/anthonycadeira.webp"
+                                alt=""></a></div>
+                    <a id="linkado" href="">
+                        <div class="postnotice">
+                            <div class="titulomini">Anthony Edwards é multado por jogar cadeira em torcedor</div>
+                            <div class="assunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur
+                                non laboriosam autem nulla dolor nesciunt dolorum natus vel, facilis cupiditate porro
+                                sit at nisi blanditiis facere? Iure, corrupti voluptatum?</div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="notice">
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/curry.webp" alt=""></a>
+                    </div>
+                    <a id="linkado" href="">
+                        <div class="postnotice">
+                            <div class="titulomini">Curry cria polêmica ao dizer que é o melhor armador da história
+                            </div>
+                            <div class="assunto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur
+                                non laboriosam autem nulla dolor nesciunt dolorum natus vel, facilis cupiditate porro
+                                sit at nisi blanditiis facere? Iure, corrupti voluptatum?</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="notice">
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/medina.webp" alt=""></a>
+                    </div>
+                    <a id="linkado" href="">
+                        <div class="postnotice">
+                            <div class="titulomini">Medina perde no Taiti e esta fora do FINALS</div>
+                            <div class="assunto">Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur non laboriosam autem
+                                nulla dolor nesciunt dolorum natus vel, facilis cupiditate porro sit at nisi blanditiis
+                                facere? Iure, corrupti voluptatum?</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    const openButton = document.querySelector('.bx-menu');
+    const closeButton = document.getElementById('Fechar');
+    const overlay = document.getElementById('overlay');
+
+    openButton.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+</script>
+
+</html>

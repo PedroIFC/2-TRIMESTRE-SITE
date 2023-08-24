@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ritmo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,21 @@
     <header>
         <div><img src="imagens/logo.png" alt=""></div>
         <div id="titulosite">RITMO</div>
-        <nav><i class='bx bx-menu'></i></nav>
+        <nav>
+            <i class='bx bx-menu'>
+                
+            </i>
+
+            <div class="overlay" id="overlay">
+                <div class="menu">
+                    <a href="index.html" onclick="toggleMenu()">Home</a>
+                    <a href="basquete.html" onclick="toggleMenu()">Basquete</a>
+                    <a href="futebol.html" onclick="toggleMenu()">futebol</a>
+                    <a href="surfe.html" onclick="toggleMenu()">Surfe</a>
+                    <button id="Fechar">Fechar Menu</button>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="noticiastop">
@@ -28,8 +42,8 @@
                     <div id="meio">
                         <div id="CUBAO">
                             <div id="noticiaPrincipal">
-                                <h1 id="neymarcontratacao"></h1>
                                 <img src="imagens/neymar10.jpg" alt="">
+                                <p class="tittle">Neymar é oficialmente do AL Hilal!</p>
                             </div>
                             <div id="noticiaDupla">
                                 <div class="miniNotice" id="paqueta">
@@ -50,7 +64,8 @@
         <section>
             <div id="abrangedora">
                 <div class="notice">
-                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/sheillavolei.webp" alt=""></a></div>
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/sheillavolei.webp"
+                                alt=""></a></div>
                     <a id="linkado" href="">
                         <div class="postnotice">
                             <div class="titulomini">Bicampeã olímpica Sheilla será assistente da seleção feminina de
@@ -62,7 +77,8 @@
                     </a>
                 </div>
                 <div class="notice">
-                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/anthonycadeira.webp" alt=""></a></div>
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/anthonycadeira.webp"
+                                alt=""></a></div>
                     <a id="linkado" href="">
                         <div class="postnotice">
                             <div class="titulomini">Anthony Edwards é multado por jogar cadeira em torcedor</div>
@@ -74,7 +90,8 @@
                     </a>
                 </div>
                 <div class="notice">
-                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/curry.webp" alt=""></a></div>
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/curry.webp" alt=""></a>
+                    </div>
                     <a id="linkado" href="">
                         <div class="postnotice">
                             <div class="titulomini">Curry cria polêmica ao dizer que é o melhor armador da história
@@ -86,7 +103,8 @@
                     </a>
                 </div>
                 <div class="notice">
-                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/medina.webp" alt=""></a></div>
+                    <div class="imagemnotice"><a class="linkimagem" href=""><img src="imagens/medina.webp" alt=""></a>
+                    </div>
                     <a id="linkado" href="">
                         <div class="postnotice">
                             <div class="titulomini">Medina perde no Taiti e esta fora do FINALS</div>
@@ -101,5 +119,18 @@
         </section>
     </main>
 </body>
+<script>
+    const openButton = document.querySelector('.bx-menu');
+    const closeButton = document.getElementById('Fechar');
+    const overlay = document.getElementById('overlay');
+
+    openButton.addEventListener('click', () => {
+        overlay.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+</script>
 
 </html>
