@@ -115,12 +115,13 @@ header img {
 }
 
 .tittle {
+    padding: 5px;
     opacity: 0.8;
     background-color: var(--var-cor7);
     flex-wrap: nowrap;
     display: flex;
     position: relative;
-    top: -280px;
+    top: -270px;
     z-index: 2;
     color: white;
     font-size: 46px;
@@ -131,7 +132,43 @@ header img {
 .tittle a {
     opacity: 1;
 }
+#paquetas {
+    padding: 5px;
+    opacity: 0.8;
+    background-color: var(--var-cor7);
+    flex-wrap: nowrap;
+    display: flex;
+    position: relative;
+    top: -120px;
+    z-index: 2;
+    color: white;
+    font-size: 34px;
+    font-family: var(--var-tituloNoticia);
+    width: 600px;
+}
 
+#paquetas a {
+    opacity: 1;
+}
+#giannis {
+    padding: 5px;
+    opacity: 0.8;
+    background-color: var(--var-cor7);
+    flex-wrap: nowrap;
+    display: flex;
+    position: relative;
+    top: -370px;
+    z-index: 2;
+    color: white;
+    font-size: 34px;
+    font-family: var(--var-tituloNoticia);
+    width: 600px;
+}
+
+#giannis a{
+    opacity: 1;
+}
+   
 #conteudo {
     padding-top: 100px;
     height: 100vh;
